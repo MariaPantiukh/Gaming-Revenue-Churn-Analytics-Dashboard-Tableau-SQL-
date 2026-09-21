@@ -1,6 +1,6 @@
 # Gaming Revenue & Churn Analytics Dashboard (Tableau & SQL)
 
-![Tableau](https://img.shields.io/badge/Tableau-Public-E97627?style=flat&logo=Tableau&logoColor=white)
+![Tableau](https://public.tableau.com/app/profile/mariia.pantiukh/viz/MonthlyRevenueUserGrowthAnalytic/Dashboard1)
 
 
 ## Executive Summary
@@ -22,7 +22,7 @@ In mobile and online gaming, focusing solely on total monthly revenue obscures c
 ## ⚙️ Data Architecture & Solution Design
 
 ### 1. PostgreSQL Pipeline & CTE Architecture
-A multi-stage SQL pipeline (`gaming_revenue_query.sql`) was developed to process transactional data at the database level, optimizing query speed and structuring monetization categories:
+A multi-stage SQL pipeline was developed to process transactional data at the database level, optimizing query speed and structuring monetization categories:
 * **`monthly_user_revenue` (CTE 1):** Aggregates raw in-app transaction records (`project.games_payments`) into monthly spending totals per player.
 * **`user_life_cycle` (CTE 2):** Applies window functions (`LAG` and `LEAD`) to establish historical payment contexts, evaluating prior vs. subsequent payment months and spending levels per user.
 * **`mrr_classification` (CTE 3):** Classifies each player-month payment into explicit revenue buckets (*New MRR*, *Expansion MRR*, *Contraction MRR*, *Retained MRR*, *Resubscribed MRR*) and calculates explicit churn flags.
@@ -48,14 +48,14 @@ The dashboard models **10+ primary game industry metrics** using calculated fiel
 
 ## 🖥️ Tableau Dashboard Walkthrough
 
-🔗 **[View Live Dashboard on Tableau Public](INSERT_YOUR_TABLEAU_PUBLIC_URL_HERE)**
+🔗 **[[View Live Dashboard on Tableau Public](https://public.tableau.com/app/profile/mariia.pantiukh/viz/MonthlyRevenueUserGrowthAnalytic/Dashboard1)]**
 
 The dashboard is structured into four main visual zones designed for high-level monitoring and deep-dive analysis:
 
 1. **Executive Scorecards (KPI Header):**
    * Displays high-level health metrics for instant assessment: **Total MRR**, **Paid Users**, **ARPPU**, **LT**, and **LTV**.
-2. **MRR Breakdown & Driver Analysis (Waterfall Diagram):**
-   * A stacked/waterfall visualization breaking down monthly revenue momentum.
+2. **MRR Breakdown & Driver Analysis:**
+   * A stacked visualization breaking down monthly revenue momentum.
    * Visualizes positive revenue drivers (*New MRR, Expansion, Resubscribed*) against negative offsets (*Contraction, Churned Revenue*) to isolate net monthly growth.
 3. **Paid User Acquisition vs. Churn (Diverging Bar + Line Combo):**
    * Tracks monthly paying player acquisition (*New Paid Users*) against monthly churned players (*Churned Users*) alongside total active paying player trends.
@@ -67,4 +67,3 @@ The dashboard is structured into four main visual zones designed for high-level 
 
 ---
 
-## 📁 Repository Structure
