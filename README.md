@@ -14,6 +14,7 @@ In mobile and online gaming, focusing solely on total monthly revenue obscures c
 * **Monetization Economics:** How are core unit economics (**ARPPU**, **Customer Lifetime**, and **Lifetime Value**) trending over time?
 * **Segmented Root-Cause Analysis:** How do monetization and churn metrics vary across player cohorts (*Language/Locale, Age Groups, Game Titles, and Device Performance Flags*)?
 
+<img width="1839" height="1468" alt="Dashboard 1 (1)" src="https://github.com/user-attachments/assets/294ef87f-0328-462e-aaf0-9205dd946825" />
 ---
 
 ## Data Architecture & Solution Design
@@ -62,4 +63,4 @@ The dashboard is structured into four main visual zones designed for high-level 
 5. **Interactive Segmentation Filters:**
    * Global slicers for `Month of Payment month`, `Age`, and `Language` allow analysts to pinpoint technical issues or demographic-specific churn.
 
-<img width="1839" height="1468" alt="Dashboard 1 (1)" src="https://github.com/user-attachments/assets/294ef87f-0328-462e-aaf0-9205dd946825" />
+
