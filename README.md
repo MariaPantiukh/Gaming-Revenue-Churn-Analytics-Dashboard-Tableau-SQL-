@@ -46,7 +46,7 @@ The dashboard models **10+ primary game industry metrics** using calculated fiel
 
 ## Tableau Dashboard Walkthrough
 
-**[[View Live Dashboard on Tableau Public](https://public.tableau.com/app/profile/mariia.pantiukh/viz/MonthlyRevenueUserGrowthAnalytic/NewMRR#1)]**
+**[[View Live Dashboard on Tableau Public](https://public.tableau.com/views/MonthlyRevenueUserGrowthAnalytic/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)]**
 
 The dashboard is structured into four main visual zones designed for high-level monitoring and deep-dive analysis:
 
